@@ -1,0 +1,101 @@
+@font-face {
+    font-family: "minha_fonte";
+    src: url('../fonts/Copyduck.jpg');
+} 
+
+* {
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "minha fonte";
+
+}
+
+body {
+
+background: url('../imagens/relogio\ imagem.webp') center no-repeat;
+background-size: cover;
+height: 100vh;
+
+display: grid;
+place-items: center;
+
+}
+
+#date {
+
+font-size: 3rem;
+color: aliceblue;
+    
+}
+
+.relogio {
+
+background-color: rgba(255, 240, 255, 0);
+width: 70%;
+display: flex;justify-content: space-around;
+padding: 3%;
+box-shadow: 8px 8px 18px;
+backdrop-filter: blur(8px);
+border-radius: 12px;align-items: center;
+
+}
+
+.relogio div {
+
+background-color: rgba(165, 42, 42, 0.198);
+border-radius: 8px;
+width: 30%;
+padding: 2%;
+margin: 0 1rem;
+box-shadow: 5px 5px 8px;
+backdrop-filter: blur(8px);
+display: flex;
+align-items: center;
+flex-direction: column;
+
+}
+
+.relogio div span {
+
+font-size: 4rem;
+color: aliceblue;
+
+
+}
+
+
+.relogio div span.tempo {
+
+font-size: 1rem;
+color: rgb(red, green, blue);
+
+}
+
+@media (max-width: 769px){
+
+.relogio {
+
+flex-direction: column;
+width: 90%;
+height: 90vh;}
+
+}
+
+.relogio div {
+
+width: 90%;
+height: 30%;
+margin-bottom: 2rem;
+
+
+}
+
+   
+
+  
+
+   
+
+
